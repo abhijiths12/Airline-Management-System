@@ -1,0 +1,497 @@
+.image_size {
+    width: 68px;
+    height: 50px;
+    
+    /* aspect-ratio: 3/9; */
+    
+}
+
+.fornav {
+  
+    font-family: fantasy;
+    /* position:fixed; */
+    /* background-color: red;
+     */
+     background-image: radial-gradient(circle at 67% 83%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22, 176, 207),rgb(103, 7, 215));
+}
+
+.backgroundcaro{
+    margin-top: -100px;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-size: cover;
+    
+    /* background-image: url(../../public/images/carousel-2.jpg); */
+}
+
+
+.searcharea{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 340px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid black;
+    border-top: 70px solid rgb(2, 45, 98);
+
+}
+
+.heading1 {
+    margin-top: -60px;
+    margin-left: 20px;
+    font-family: fantasy;
+    font-size: 26px;
+
+}
+
+.fromtodiv {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-top: 50px;
+    margin-left: 40px;
+    /* background-color: aqua; */
+}
+
+
+.input_from {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.21)
+    
+}
+
+.input_to {
+    width: 300px;
+    height: 100px;
+    margin-left: 10px;
+    /* background-color: red; */
+   background-color: rgba(255, 255, 255, 0.21);
+
+
+}
+
+/* .div_from {
+    margin-left: 30px;
+
+    background-color: rgba(255, 255, 255, 0.21);
+
+} */
+
+/* .div_to {
+    background-color: rgba(255, 255, 255, 0.21);
+
+} */
+
+.input_from::placeholder{
+    /* color: red;
+    content: 'Search'; */
+    padding-bottom: 100px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    z-index: 9999; /* Make sure the input is above other elements */
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* Fix z-index for suggestions to ensure they appear above other elements */
+  .gm-suggestion-container {
+    z-index: 9999 !important; /* Ensure the suggestion box appears above other content */
+  }
+
+  .date_div {
+    width: 130px;
+    height:100px;
+    background-color: rgba(255, 255, 255, 0.21);
+    margin-left: 10px;
+  }
+
+  .nopass_div{
+    width: 170px;
+    height:100px;
+    background-color: rgba(255, 255, 255, 0.21);
+    margin-left: 10px;
+  }
+
+  .searchinput {
+    display: flex;
+    justify-content: end;
+    /* align-items: end; */
+    /* justify-items: flex-end; */
+    margin-top: 60px;
+    margin-right: 30px;
+  }
+
+  .searchbutton {
+    width: 130px;
+    height: 45px;
+  
+    background-color: #000d24ee;
+    border-radius: 30px;
+   
+  }
+
+  .searchbutton::placeholder{
+    /* color: white; */
+
+    padding-left: 25px;
+  }
+
+.searchdetails {
+  width: 100%;
+  height: 300px;
+  /* background-color: #2877FF; */
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.search_main {
+  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 800px;
+  height: 700px;
+  /* background-color: red; */
+}
+
+.image_searchdetails{
+  mix-blend-mode: multiply;
+   width: 70px;
+   height: 70px;
+   margin-left: 20px;
+   margin-top: 30px;
+   border-radius: 10px;
+}
+
+.timedisplaydiv{
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  /* background-color: #2877FF; */
+}
+
+.dateclass {
+  margin-left: 260px;
+  margin-top: 30px;
+}
+
+.timedisplaydiv2{
+  width: 100px;
+  height: 100px;
+  /* margin-left: 300px; */
+  margin-bottom: 40px;
+  /* background-color: #2877FF; */
+}
+
+.timedisplaydiv3{
+  width: 100px;
+  height: 100px;
+  /* margin-left: 300px; */
+  margin-bottom: 40px;
+  /* background-color: #2877FF; */
+}
+
+.line {
+  position: absolute;
+  /* margin-top: 30px; */
+
+  width: 340px;
+  border-top: 1px solid black;
+  z-index: 222;
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+
+.timemain{
+  margin-left: 40px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-around ;
+  margin-top: 30px;
+}
+
+.price {
+  margin-left: 550px;
+  margin-top: -40px;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.bookingpagediv {
+  /* position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  width: 800px;
+  border: 1px solid black;
+  height: 1000px;
+  margin-left: 180px;
+  /* margin-top: 100px; */
+  border-radius: 15px;
+  background-color: #2877ff19;
+}
+
+.pricedetails {
+  margin-left: 100px;
+  width: 300px;
+  height: 400px;
+  background-color: #2877ff19;
+  /* background-color: aquamarine; */
+  box-shadow: 1px 1px 5px black;
+  border-radius: 15px;
+}
+
+body {
+  font-family: fantasy;
+
+}
+
+.navdiv {
+  background-color: #2877FF;
+}
+
+.passengerlist {
+  margin-top: 10px;
+  width: 250px;
+  height: 220px;
+  /* background-color: red; */
+  border: 1px solid#333;
+  border-radius: 15px;
+  display: flex;
+  margin-left: 10px;
+}
+
+.border1 {
+
+  width: 250px;
+  border: 1px solid black;
+}
+
+.actived{
+  color: yellow;
+  /* background-color: yellow; */
+}
+
+
+.maindiv {
+  width: 100%;
+  height: 900px;
+  margin-top: -100px;
+  background-image: radial-gradient(circle at 67% 83%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22, 176, 207),rgb(103, 7, 215));
+}
+
+
+
+/* .sample {
+  position: absolute;
+  z-index: 999;
+  margin-left: 300px;
+
+} */
+
+.login2 {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+  width: 400px;
+  /* height: 400px; */
+  /* color:aliceblue; */
+  min-height: 400px;
+  max-height: 800px;
+  background-color: black;
+
+  padding: 30px;
+}
+
+.login2>body{
+  background-color: aqua;
+}
+
+.form-control1::placeholder {
+color: white;
+}
+
+
+.fullbody {
+  margin-top: -50px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(55, 76, 76, 0.461)  ;
+}
+
+.showlogin {
+  margin-top: -50px;
+  display: none;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(55, 76, 76, 0.461)  ;
+}
+
+
+/* .boardingpass {
+  /* margin-top: 150px; */
+  /* width: 800px;
+  height: 300px;
+  background-color: aqua;
+} */
+
+.ticketcard {
+  margin-left: 300px;
+  width: 900px;
+  height: 300px;
+  /* background-color: aqua; */
+  border-radius: 30px;
+  border: 1px solid black;
+  border-top: 50px solid black;
+margin-top: 80px;
+}
+
+.feedback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height:300px;
+  /* background-color: aquamarine; */
+}
+
+
+.ratingdiv {
+  position: absolute;
+  font-size: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 340px;
+  height: 200px;
+  /* background-color: #333; */
+  border:1px solid black;
+  /* align-content: center; */
+  
+}
+
+
+.flightmaindiv {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.flightdetails {
+  width: 400px;
+  height: 240px;
+  margin: 30px;
+  background-color: #bfceda;
+  /* content: '#'; */
+  border-radius: 15px;
+}
+
+.flightimage{
+  border-radius: 15px;
+  width: 400px;
+  height: 240px;
+  aspect-ratio: 16/9;
+}
+
+.hoverpic {
+  /* transition-property: block; */
+  /* z-index: -1; */
+  transition-timing-function: ease-in-out;
+ animation-timeline: view();
+ animation-name: hovering;
+ animation-duration: 10s;
+
+  /* display: none; */
+  /* animation-name: loading; */
+}
+
+/* .hoverpic {
+  animation-timeline: view();
+  animation-name:loading;
+} */
+
+.flightdetails:hover .hoverpic {
+  /* animation-name: loading; */
+ animation-duration: 10s;
+  /* transition-delay: 100s; */
+  /* display: block; */
+
+}
+
+@keyframes hovering {
+  0% {
+    /* background-color: red; */
+    /* opacity: 0; */
+    transform: translateX(-150px);
+
+  }
+
+  10% {
+    transform: translateY(-100);
+
+    /* background-color: blue; */
+  }
+
+  
+
+
+}
+
+
+
+
+
+/* .zindex { */
+  /* z-index: 999;
+   */
+
+   /* width: 200px;
+   height: 300px; */
+  /* position: relative; */
+/* } */
+
+/* .ab {
+  margin-bottom: -300px;
+} */
+
+.mainbackground {
+  width: 100%;
+  min-height: 720px;
+  max-height: 2000px;
+  background-image: radial-gradient(circle at 67% 83%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22, 176, 207),rgb(103, 7, 215));
+}
+
+/* .mainbackground {
+
+} */
+
+
+.selectbox {
+  width: 300px;
+  height: 200px;
+}
