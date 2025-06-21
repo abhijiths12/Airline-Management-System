@@ -182,6 +182,8 @@ import React, { useEffect, useState } from "react";
 import Sidepanel from "./Sidepanel";
 import { Link, useLocation } from "react-router-dom";
 import imgurl from "./imgurl";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
 function Chat_admin() {
 
     const [view, setView] = useState([])
@@ -243,7 +245,7 @@ function Chat_admin() {
 
     //    console.log('null')
        
-        fetch('http://localhost:5000/main/chatdata', {
+        fetch(BACKEND_URL+'/main/chatdata', {
             method: 'post',
             headers: {
                 Accept: 'application/json',
@@ -264,7 +266,7 @@ function Chat_admin() {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/main/viewcompanies').then((res) => res.json()).then((result) => {
+        fetch(BACKEND_URL+'/main/viewcompanies').then((res) => res.json()).then((result) => {
             // console.log(result)
             setView(result)
         })
@@ -280,7 +282,7 @@ function Chat_admin() {
 
         }
         // console.log(data)
-        fetch('http://localhost:5000/main/chatwithcompany', {
+        fetch(BACKEND_URL+'/main/chatwithcompany', {
             method: 'post',
             headers: {
                 Accept: 'application/json',

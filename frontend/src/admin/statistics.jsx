@@ -1,6 +1,8 @@
 import Sidepanel from "./Sidepanel";
 import React, { PureComponent, useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
 
 function Statistics() {
 
@@ -43,7 +45,7 @@ function Statistics() {
 
 
     useEffect(() => {
-           fetch('http://localhost:5000/main/flightdata').then((res) => res.json()).then((result) => {
+           fetch(BACKEND_URL+'/main/flightdata').then((res) => res.json()).then((result) => {
             setDatas(result)
             // console.log(result)
            })

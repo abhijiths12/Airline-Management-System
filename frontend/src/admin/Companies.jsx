@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import Sidepanel from "./Sidepanel";
 import './admin.css'
 import { Link } from "react-router-dom";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
 
 function Companies() {
 
     const [view,setView] = useState([])
     
     useEffect(() => {
-        fetch('http://localhost:5000/main/viewcompanies').then((res) => res.json()).then((result) => {
+        fetch(BACKEND_URL+'/main/viewcompanies').then((res) => res.json()).then((result) => {
             // console.log(result)
             setView(result)
         })

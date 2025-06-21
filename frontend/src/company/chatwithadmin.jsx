@@ -3,6 +3,9 @@ import Company_sidebar from "./company_sidebar";
 import './company.css';
 import imgurl from "../admin/imgurl";
 import companypath from "./companyurl";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
+// console.log(BACKEND_URL)
 
 function Chatwithadmin() {
     // setTimeout(() => {
@@ -51,7 +54,7 @@ function Chatwithadmin() {
             companyid: ids.companyid
         }
     
-    fetch('http://localhost:5000/main/chattoadmin',{
+    fetch(BACKEND_URL+'/main/chattoadmin',{
         method: 'post',
         headers: {
             Accept: 'application/json',

@@ -114,7 +114,7 @@ function Bookingpage() {
       };
 
 //     const paymenthandler = async(e) => {
-//         const response = await fetch("http://localhost:5000/order",{
+//         const response = await fetch("http",{
 //             method: 'post',
 //             body: JSON.stringify({
 //                 amount:amount,

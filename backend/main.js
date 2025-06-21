@@ -22,6 +22,7 @@ app.use(cors())
 
 
 const PORT = process.env.PORT;
+console.log(PORT)
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
@@ -131,4 +132,4 @@ app.use('/main',adminrouter)
 app.use('/company',companyrouter)
 app.use('/passenger',passengerrouter)
 
-app.listen(5000)
+app.listen(PORT)

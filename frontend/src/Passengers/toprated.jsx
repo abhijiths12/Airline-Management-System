@@ -51,11 +51,7 @@ function Statistics() {
     },[])
 
     // useEffect(() => {
-    //        fetch('http://localhost:5000/main/flightdata').then((res) => res.json()).then((result) => {
-    //         // console.log(result)
-    //        })
-
-        //    fetch('http://localhost:5000/main/flightsofcompany').then((res) => res.json()).then((result) => {
+    //        fetch('
 
 
         //    })

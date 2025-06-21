@@ -50,7 +50,7 @@ function Passenger_sidebar() {
 
 {!companyauth && !auth? (
                       <li><a class="dropdown-item" href="/companylogin">Login As Company</a></li>
-                    ) : null}
+                    ) : null} 
 
             {/* <li><hr class="dropdown-divider"/></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li> */}

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Sidepanel from "./Sidepanel";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 function Adminflights() {
     const [view,setView] = useState([])
     const [refresh,setRefresh] = useState(0)
 
     useEffect(() => {
-        fetch('http://localhost:5000/main/flightsofcompany').then((res) => res.json()).then((result) => {
+        fetch(BACKEND_URL+'/main/flightsofcompany').then((res) => res.json()).then((result) => {
             setView(result)
         })
     },[refresh])

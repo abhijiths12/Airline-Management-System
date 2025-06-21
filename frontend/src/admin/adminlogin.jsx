@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Passenger_sidebar from "../Passengers/sidebar_passenger";
 import { useNavigate } from "react-router-dom";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
 
 function Adminlogin() {
 
@@ -18,7 +20,7 @@ function Adminlogin() {
                 password: password
             }
 
-            fetch("http://localhost:5000/main/adminlogin",{
+            fetch(BACKEND_URL+"/main/adminlogin",{
                 method: 'post',
                 headers: {
                     Accept: 'application/json',

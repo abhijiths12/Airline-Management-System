@@ -2,7 +2,14 @@ const PDFDocument = require('pdfkit');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 const { bookingdetails } = require('../model/passenger.model');
+const { configDotenv } = require('dotenv');
 
+
+
+
+const email = process.env.email
+const passEmailKey = process.env.emailKeyPass
+// console.log(p)
 // Function to create a PDF ticket
 exports.pdfprint = (async(req,res) => {
 console.log('pppppppppppdddfff')
@@ -36,8 +43,8 @@ async function sendEmail(ticketFilePath, passengerEmail) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'abhijithspkm@gmail.com',
-            pass: 'gbqosvmwrpqvpjdx' 
+            user: email,
+            pass: passEmailKey 
         }
     });
 

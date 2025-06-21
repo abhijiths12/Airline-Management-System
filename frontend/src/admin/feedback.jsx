@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Sidepanel from "./Sidepanel";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 function Feedback() {
 
     const [view,setView] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/main/findingfeedback').then((res) => res.json()).then((result) => {
+        fetch(BACKEND_URL+'/main/findingfeedback').then((res) => res.json()).then((result) => {
             setView(result)
         })
     },[])

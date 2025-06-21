@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Sidepanel from "./Sidepanel";
 import './admin.css'
 import { useNavigate } from "react-router-dom";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
 
 function Add_company() {
 
@@ -26,7 +28,7 @@ function Add_company() {
         //     password: password,
         //     file: file
         // }
-            fetch('http://localhost:5000/main/company',{
+            fetch(BACKEND_URL+'/main/company',{
                 method:'post',
                
                 body: formdata
